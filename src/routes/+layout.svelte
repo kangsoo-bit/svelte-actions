@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../app.css'
+  import '../app.css';
 </script>
 
 <svelte:head>
@@ -14,7 +14,7 @@
   <a href="/motion">Motion</a>
   <a href="/forms">Forms</a>
   <a href="/examples">Examples</a>
-  <a href="/accordion" />
+  <a href="/accordion">accordion</a>
 </nav>
 
 <main>

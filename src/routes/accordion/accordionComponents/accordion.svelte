@@ -1,9 +1,16 @@
 <script lang="ts">
+  import { setContext } from 'svelte';
+  import { writable } from 'svelte/store';
+
   export let collapsed = false;
+  const activeComponentId = writable(0);
+
+  setContext('collapsed', collapsed);
+  setContext('active', activeComponentId);
 </script>
 
 <div class="accordion">
-  <slot name="item" />
+  <slot />
 </div>
 
 <style>
