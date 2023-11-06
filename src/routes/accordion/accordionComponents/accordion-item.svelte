@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getContext } from 'svelte';
+  //   import { getContext } from 'svelte';
   import { slide } from 'svelte/transition';
   import { getAccordionOptions } from './contexts';
 
