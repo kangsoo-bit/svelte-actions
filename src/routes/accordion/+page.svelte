@@ -11,21 +11,11 @@
   ];
 </script>
 
-<Accordion collapsed>
-  <AccordionItem>
-    <div slot="item">Item 1</div>
-    <div slot="content">content 1</div>
-  </AccordionItem>
-  <AccordionItem>
-    <div slot="item">Item 2</div>
-    <div slot="content">content 2</div>
-  </AccordionItem>
-  <AccordionItem>
-    <div slot="item">Item 3</div>
-    <div slot="content">content 3</div>
-  </AccordionItem>
-  <AccordionItem>
-    <div slot="item">Item 4</div>
-    <div slot="content">content 4</div>
-  </AccordionItem>
+<Accordion collapse>
+  {#each items as item}
+    <AccordionItem>
+      <div slot="item">{item.item}</div>
+      <div slot="content">{item.content}</div>
+    </AccordionItem>
+  {/each}
 </Accordion>

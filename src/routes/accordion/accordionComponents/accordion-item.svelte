@@ -1,12 +1,15 @@
 <script lang="ts">
   import { getContext } from 'svelte';
   import { slide } from 'svelte/transition';
+  import { getAccordionOptions } from './contexts';
 
   export let open = false;
 
   const componentId = crypto.randomUUID();
-  const activeComponentId = getContext('active');
-  const collapsed = getContext('collapsed');
+  //   const activeComponentId = getContext('active');
+  //   const collapse = getContext('collapse');
+
+  const { collapse, activeComponentId } = getAccordionOptions();
 
   function toggle() {
     open = !open;
@@ -17,11 +20,11 @@
   }
 
   function handleClick() {
-    collapsed ? setActive() : toggle();
+    collapse ? setActive() : toggle();
   }
-  $: open && collapsed && setActive();
+  $: open && collapse && setActive();
   $: isActive = $activeComponentId === componentId;
-  $: isOpen = collapsed ? isActive : open;
+  $: isOpen = collapse ? isActive : open;
 </script>
 
 <div class="accordion-item">
