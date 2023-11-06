@@ -15,6 +15,7 @@
   <a href="/forms">Forms</a>
   <a href="/examples">Examples</a>
   <a href="/accordion">accordion</a>
+  <a href="/contacts">contacts</a>
 </nav>
 
 <main>
