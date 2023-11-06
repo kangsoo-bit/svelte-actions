@@ -14,6 +14,7 @@
   <a href="/motion">Motion</a>
   <a href="/forms">Forms</a>
   <a href="/examples">Examples</a>
+  <a href="/accordion" />
 </nav>
 
 <main>
